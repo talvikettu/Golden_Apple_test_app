@@ -125,7 +125,8 @@
 1. /help - выводит список всех доступных команд
 2. /weather &lt;город&gt; - выводит погоду в указанном городе
 3. /convert &lt;сумма&gt; &lt;из валюты&gt; &lt;в валюту&gt; - конвертирует сумму из валюты в валюту
-4. /joke - выводит случайную шутку</value>
+4. /joke - выводит случайную шутку
+5. /language - команда для смены языка в боте</value>
   </data>
   <data name="WeatherReport" xml:space="preserve">
     <value>Погода в городе {0}:
@@ -164,5 +165,8 @@
     <value>Вы не ввели сумму, которую хотите конвертировать.
 Пример вызова функции:
 /convert 100 eur rub</value>
+  </data>
+  <data name="ConvertResult" xml:space="preserve">
+    <value>Результат: {0} {1} = {2} {3}</value>
   </data>
 </root>

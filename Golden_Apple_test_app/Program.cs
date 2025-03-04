@@ -88,13 +88,12 @@ async Task OnMessage(Message msg, UpdateType type) // метод, который
         PropertyInfo property2 = typeof(ConversionRate).GetProperty(tocurrency);
         if(property1==null || property2==null)
         {
-            await bot.SendMessage(msg.Chat, "Invalid currencies \n Use currencies as 3 letter currency codes f.e. RUB, USD etc.");
             return;
         }
         double rate1 = (double)property1.GetValue(data.conversion_rates);
         double rate2 = (double)property2.GetValue(data.conversion_rates);
         double newvalue = amount / rate1 * rate2;
-        await bot.SendMessage(msg.Chat, $"The result: {amount} {fromcurrency} = {newvalue} {tocurrency}");
+        await bot.SendMessage(msg.Chat, GetLocalizedString(resourcemanager, "ConvertResult", amount, fromcurrency, newvalue, tocurrency));
     }
 
     if(msg.Text.StartsWith("/weather")) // описание /weather - запрос погоды в городе

@@ -122,10 +122,11 @@
   </data>
   <data name="HelpMessage" xml:space="preserve">
     <value>You are using a bot with the following commands 
- 1. /help - gives you the list of all commands 
- 2. /weather &lt;city&gt; - gives you the weather report of the city. 
- 3. /convert &lt;amount of money&gt; &lt;currency1&gt; &lt;currency2&gt; - converts amount of money from one currency to the other
- 4. /joke - gives you a random joke</value>
+1. /help - gives you the list of all commands 
+2. /weather &lt;city&gt; - gives you the weather report of the city. 
+3. /convert &lt;amount of money&gt; &lt;currency1&gt; &lt;currency2&gt; - converts amount of money from one currency to the other
+4. /joke - gives you a random joke
+5. /language - the command to change language</value>
   </data>
   <data name="WeatherReport" xml:space="preserve">
     <value>The weather in {0}: 
@@ -162,5 +163,8 @@ Example of correct call /convert 100 rub eur</value>
   <data name="ConvertError3" xml:space="preserve">
     <value>You didn't write amount of money.
 Example of correct call /convert 100 rub eur</value>
+  </data>
+  <data name="ConvertResult" xml:space="preserve">
+    <value>Result: {0} {1} = {2} {3}</value>
   </data>
 </root>
